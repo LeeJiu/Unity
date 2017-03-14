@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 9ecdd7e0bbfdc32469f04212fa031123
+timeCreated: 1483617590
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: HYGungSo-Bold
+  fontNames:
+  - HYGungSo-Bold
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

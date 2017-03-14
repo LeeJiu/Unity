@@ -1,0 +1,686 @@
+fileFormatVersion: 2
+guid: ea3a6e1cdad858e429e3aa9924a04742
+timeCreated: 1484654003
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: player_0
+    21300002: player_1
+    21300004: player_2
+    21300006: player_3
+    21300008: player_4
+    21300010: player_5
+    21300012: player_6
+    21300014: player_7
+    21300016: player_8
+    21300018: player_9
+    21300020: player_10
+    21300022: player_11
+    21300024: player_12
+    21300026: player_13
+    21300028: player_14
+    21300030: player_15
+    21300032: player_16
+    21300034: player_17
+    21300036: player_18
+    21300038: player_19
+    21300040: player_20
+    21300042: player_21
+    21300044: player_22
+    21300046: player_23
+    21300048: player_24
+    21300050: player_25
+    21300052: player_26
+    21300054: player_27
+    21300056: player_28
+    21300058: player_29
+    21300060: player_30
+    21300062: player_31
+    21300064: player_32
+    21300066: player_33
+    21300068: player_34
+    21300070: player_35
+    21300072: player_36
+    21300074: player_37
+    21300076: player_39
+    21300078: player_40
+    21300080: player_41
+    21300082: player_42
+    21300084: player_43
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 585
+        width: 78
+        height: 84
+      alignment: 9
+      pivot: {x: 0.7463089, y: 0.08906046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 585
+        width: 80
+        height: 91
+      alignment: 9
+      pivot: {x: 0.7656727, y: 0.08144572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_2
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 585
+        width: 92
+        height: 91
+      alignment: 9
+      pivot: {x: 0.7847869, y: 0.083620176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_3
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 585
+        width: 105
+        height: 108
+      alignment: 9
+      pivot: {x: 0.22771578, y: 0.06809037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_4
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 585
+        width: 109
+        height: 99
+      alignment: 9
+      pivot: {x: 0.1789086, y: 0.07594315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_5
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 572
+        width: 98
+        height: 77
+      alignment: 9
+      pivot: {x: 0.20241438, y: 0.26525402}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_6
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 585
+        width: 82
+        height: 71
+      alignment: 9
+      pivot: {x: 0.7628635, y: 0.11408588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_7
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 579
+        width: 112
+        height: 70
+      alignment: 9
+      pivot: {x: 0.33844212, y: 0.19180036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_8
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 583
+        width: 108
+        height: 66
+      alignment: 9
+      pivot: {x: 0.20292947, y: 0.14661847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_9
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 585
+        width: 83
+        height: 74
+      alignment: 9
+      pivot: {x: 0.2961014, y: 0.10596363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 500
+        width: 49
+        height: 71
+      alignment: 9
+      pivot: {x: 0.57641906, y: 0.10821705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_11
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 500
+        width: 107
+        height: 64
+      alignment: 9
+      pivot: {x: 0.18003945, y: 0.11551571}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_12
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 500
+        width: 100
+        height: 64
+      alignment: 9
+      pivot: {x: 0.18973832, y: 0.12387419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_13
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 500
+        width: 90
+        height: 64
+      alignment: 9
+      pivot: {x: 0.21470167, y: 0.12387419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 500
+        width: 90
+        height: 64
+      alignment: 9
+      pivot: {x: 0.2622511, y: 0.13223267}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_15
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 500
+        width: 122
+        height: 63
+      alignment: 9
+      pivot: {x: 0.16185123, y: 0.13055469}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_16
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 500
+        width: 137
+        height: 63
+      alignment: 9
+      pivot: {x: 0.2542034, y: 0.12902686}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_17
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 500
+        width: 125
+        height: 63
+      alignment: 9
+      pivot: {x: 0.1606372, y: 0.13055517}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_18
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 500
+        width: 137
+        height: 63
+      alignment: 9
+      pivot: {x: 0.1442497, y: 0.1205362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_19
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 403
+        width: 78
+        height: 87
+      alignment: 9
+      pivot: {x: 0.75647783, y: 0.08314707}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_20
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 403
+        width: 78
+        height: 86
+      alignment: 9
+      pivot: {x: 0.7622612, y: 0.08365436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_21
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 403
+        width: 78
+        height: 83
+      alignment: 9
+      pivot: {x: 0.756538, y: 0.085360974}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_22
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 403
+        width: 73
+        height: 86
+      alignment: 9
+      pivot: {x: 0.7484946, y: 0.09436248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_23
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 403
+        width: 73
+        height: 86
+      alignment: 9
+      pivot: {x: 0.7293797, y: 0.09977119}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_24
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 403
+        width: 74
+        height: 86
+      alignment: 9
+      pivot: {x: 0.74513614, y: 0.09436248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_25
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 403
+        width: 74
+        height: 86
+      alignment: 9
+      pivot: {x: 0.74513614, y: 0.08895413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_26
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 403
+        width: 73
+        height: 86
+      alignment: 9
+      pivot: {x: 0.72797716, y: 0.08816031}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_27
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 403
+        width: 72
+        height: 86
+      alignment: 9
+      pivot: {x: 0.73114353, y: 0.08319837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_28
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 403
+        width: 72
+        height: 86
+      alignment: 9
+      pivot: {x: 0.73114353, y: 0.07823642}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_29
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 403
+        width: 72
+        height: 90
+      alignment: 9
+      pivot: {x: 0.7311427, y: 0.07801581}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_30
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 247
+        width: 89
+        height: 69
+      alignment: 9
+      pivot: {x: 0.7780904, y: 0.1845942}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_31
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 243
+        width: 86
+        height: 72
+      alignment: 9
+      pivot: {x: 0.78282964, y: 0.24515025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_32
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 238
+        width: 65
+        height: 87
+      alignment: 9
+      pivot: {x: 0.7035152, y: 0.24494566}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_33
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 253
+        width: 104
+        height: 98
+      alignment: 9
+      pivot: {x: 0.16354312, y: 0.06456585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_34
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 254
+        width: 130
+        height: 136
+      alignment: 9
+      pivot: {x: 0.35228717, y: 0.041897494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_35
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 253
+        width: 130
+        height: 137
+      alignment: 9
+      pivot: {x: 0.3555697, y: 0.048356105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_36
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 253
+        width: 131
+        height: 137
+      alignment: 9
+      pivot: {x: 0.35667223, y: 0.051471125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_37
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 252
+        width: 136
+        height: 138
+      alignment: 9
+      pivot: {x: 0.38704324, y: 0.054721113}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_39
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 148
+        width: 126
+        height: 84
+      alignment: 9
+      pivot: {x: 0.3950119, y: 0.34251803}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_40
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 154
+        width: 68
+        height: 78
+      alignment: 9
+      pivot: {x: 0.75101495, y: 0.28663713}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_41
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 14
+        width: 45
+        height: 123
+      alignment: 9
+      pivot: {x: 0.43362036, y: 0.06286614}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_42
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 22
+        width: 85
+        height: 81
+      alignment: 9
+      pivot: {x: 0.3293096, y: 0.09434712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_43
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 22
+        width: 78
+        height: 55
+      alignment: 9
+      pivot: {x: 0.6203586, y: 0.15086067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
