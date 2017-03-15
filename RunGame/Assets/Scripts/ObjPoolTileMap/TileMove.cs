@@ -12,7 +12,7 @@ public class TileMove : MonoBehaviour
 
         if(this.transform.position.z < -3.8f)
         {
-            this.gameObject.SetActive(false);
+            ObjectPool.Instance.PushToPool("Tile", this.gameObject, null);
         }
 	}
 }

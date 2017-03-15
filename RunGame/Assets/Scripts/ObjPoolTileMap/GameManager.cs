@@ -4,29 +4,30 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public float fTileInterval = 3.8f;  //타일 간격
+    public float fTileInterval = 3.5f;  //타일 간격
 
-    private Vector3 vLastTilePos;          //맨 마지막 타일 게임 오브젝트로 바꿔라
+    private GameObject gLastTile;       //마지막에 활성화된 타일을 저장
+    private Vector3 vStartPos;
     private int nNumberOfTile;
     private int nObjCount = 0;
 
     void Awake()
     {
         nNumberOfTile = ObjectPool.Instance.GetPooledObject("Tile").nPoolCount;
-        vLastTilePos = Vector3.zero;
+        vStartPos = Vector3.zero;
 
         for(int i = 0; i < nNumberOfTile; ++i)
         {
             TileActive();
-            vLastTilePos.z += fTileInterval;
+            vStartPos.z += fTileInterval;
         }
     }
 
     void Update()
     {
+        vStartPos = gLastTile.transform.position;
+        vStartPos.z += fTileInterval;
         TileActive();
-
-        
     }
 
     //비활성화 되어있는 타일을 위치를 설정하고 활성화시킨다.
@@ -36,19 +37,19 @@ public class GameManager : MonoBehaviour
 
         if (gNewTile == null) return;
 
-        gNewTile.transform.position = vLastTilePos;
+        gNewTile.transform.position = vStartPos;
 
         gNewTile.SetActive(true);
 
-        //활성화된 타일의 위치를 저장한다.
-        vLastTilePos = gNewTile.transform.position;
+        //활성화된 타일을 저장한다.
+        gLastTile = gNewTile;
 
         //타일이 활성화될 때 오브젝트도 세팅된다.
-        //SetObject();
-        //nObjCount++;
+        ObjectActive();
+        nObjCount++;
     }
 
-    void SetObject()
+    void ObjectActive()
     {
         if (nObjCount == 0) return;
 
@@ -75,7 +76,18 @@ public class GameManager : MonoBehaviour
         else
         {
             //코인 놓는다.
+            GameObject gNewCoin = ObjectPool.Instance.PopFromPool("Coin", null);
 
+            if (gNewCoin == null)
+            {
+                Debug.Log("No have available coin in coin pool.");
+                return;
+            }
+
+            Vector3 pos = vStartPos;
+            pos.y += 1.5f;
+            gNewCoin.transform.position = pos;
+            gNewCoin.SetActive(true);
         }
     }
 }
