@@ -26,16 +26,24 @@ public class EnemyControl : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        this.GetComponent<CapsuleCollider>().isTrigger = false;
+        anim.Play("Idle");
+    }
+
     public void Dead()
     {
         anim.SetTrigger("Dead");
-        Destroy(this.gameObject, 1.2f);
+        this.GetComponent<CapsuleCollider>().isTrigger = true;
+        StartCoroutine("CoReturnToPool", 1.2f);
     }
 
     void Attack()
     {
         anim.SetBool("Attack", true);
-        Destroy(this.gameObject, 1.5f);
+        this.GetComponent<CapsuleCollider>().isTrigger = true;
+        StartCoroutine("CoReturnToPool", 1.5f);
     }
 
     private void OnTriggerEnter(Collider coll)
@@ -44,5 +52,12 @@ public class EnemyControl : MonoBehaviour
         {
             Attack();
         }
+    }
+
+    IEnumerator CoReturnToPool(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        ObjectPool.Instance.PushToPool("Enemy", this.gameObject, null);
     }
 }

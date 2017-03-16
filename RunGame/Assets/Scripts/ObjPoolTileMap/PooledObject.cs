@@ -74,4 +74,9 @@ public class PooledObject
 
         return obj;
     }
+
+    public int GetPoolSize()
+    {
+        return lPool.Count;
+    }
 }

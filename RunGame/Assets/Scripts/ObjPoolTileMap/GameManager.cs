@@ -25,9 +25,12 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        vStartPos = gLastTile.transform.position;
-        vStartPos.z += fTileInterval;
-        TileActive();
+        if(ObjectPool.Instance.GetPooledObject("Tile").GetPoolSize() > 5)
+        {
+            vStartPos = gLastTile.transform.position;
+            vStartPos.z += fTileInterval;
+            TileActive();
+        }
     }
 
     //비활성화 되어있는 타일을 위치를 설정하고 활성화시킨다.
@@ -45,11 +48,11 @@ public class GameManager : MonoBehaviour
         gLastTile = gNewTile;
 
         //타일이 활성화될 때 오브젝트도 세팅된다.
-        ObjectActive();
+        SetObject();
         nObjCount++;
     }
 
-    void ObjectActive()
+    void SetObject()
     {
         if (nObjCount == 0) return;
 
@@ -59,35 +62,54 @@ public class GameManager : MonoBehaviour
             int nRnd = Random.Range(0, 9);
             if(nRnd < 3)
             {
-                //곰
-
+                //적
+                ObjectActive("Enemy", false, true);
             }
             else if(nRnd > 5)
             {
                 //슬라이드
-
+                //ObjectActive("Slide", false);
             }
             else
             {
                 //점프
-
+                //ObjectActive("Jump", false);
             }
         }
         else
         {
             //코인 놓는다.
-            GameObject gNewCoin = ObjectPool.Instance.PopFromPool("Coin", null);
-
-            if (gNewCoin == null)
-            {
-                Debug.Log("No have available coin in coin pool.");
-                return;
-            }
-
-            Vector3 pos = vStartPos;
-            pos.y += 1.5f;
-            gNewCoin.transform.position = pos;
-            gNewCoin.SetActive(true);
+            ObjectActive("Coin", true, false);
         }
+    }
+
+    void ObjectActive(string objName, bool bInterval, bool bRotate)
+    {
+        GameObject gNewObj = ObjectPool.Instance.PopFromPool(objName, null);
+
+        if (gNewObj == null)
+        {
+            Debug.Log("No have available " + objName + " in pool.");
+            return;
+        }
+
+        Vector3 pos = vStartPos;
+
+        if(bInterval == true)
+        {
+            pos.y += 2.0f;
+        }
+        gNewObj.transform.position = pos;
+
+        if(bRotate == true)
+        {
+            gNewObj.transform.rotation = Quaternion.AngleAxis(180.0f, Vector3.up);
+        }
+        else
+        {
+            gNewObj.transform.rotation = Quaternion.identity;
+        }
+
+        gNewObj.SetActive(true);
     }
 }

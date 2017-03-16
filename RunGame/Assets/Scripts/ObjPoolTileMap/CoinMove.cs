@@ -46,6 +46,11 @@ public class CoinMove : MonoBehaviour
         if(bMove == true)
         {
             this.transform.Translate(0, 0, -fMoveSpeed * Time.deltaTime);
+
+            if (this.transform.position.z < -3.8f)
+            {
+                ObjectPool.Instance.PushToPool("Coin", this.gameObject, null);
+            }
         }
     }
 
