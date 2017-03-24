@@ -68,12 +68,12 @@ public class GameManager : MonoBehaviour
             else if(nRnd > 5)
             {
                 //슬라이드
-                //ObjectActive("Slide", false);
+                ObjectActive("Slide", false, false);
             }
             else
             {
                 //점프
-                //ObjectActive("Jump", false);
+                ObjectActive("Jump", false, false);
             }
         }
         else

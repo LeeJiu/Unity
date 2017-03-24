@@ -10,7 +10,7 @@ public class EnemyMove : MonoBehaviour
     {
         this.transform.Translate(0, 0, -fMoveSpeed * Time.deltaTime, Space.World);
 
-        if (this.transform.position.z < -3.8f)
+        if (this.transform.position.z < -8.0f)
         {
             ObjectPool.Instance.PushToPool("Enemy", this.gameObject, null);
         }

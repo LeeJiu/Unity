@@ -43,6 +43,7 @@ public class CharacterInfo : MonoBehaviour
 
     public void Damaged(int damaged)
     {
+        Debug.Log("Damaged");
         nHp -= damaged;
 
         if(nHp <= 0)

@@ -7,6 +7,7 @@ public class CharacterEffects : MonoBehaviour
     public Transform tfAtkTrans;
     public string targetTag;
     public float fAtkRange = 0.25f;
+    public int nDamage = 5;
 
 
     //============Events============
@@ -31,15 +32,26 @@ public class CharacterEffects : MonoBehaviour
                 else if(targetTag == "Player")
                 {
                     //damage
-                    cols[i].gameObject.GetComponent<CharacterInfo>().Damaged(10);
+                    cols[i].gameObject.GetComponent<CharacterInfo>().Damaged(nDamage);
                 }
 
                 //effect
-                Object obj = Instantiate(efx, tfAtkTrans.position, Quaternion.identity);
-                Destroy(obj, 1.5f);
+                GameObject obj = ObjectPool.Instance.PopFromPool("Effect", null);
+                obj.transform.position = tfAtkTrans.position;
+                obj.SetActive(true);
+
+                StartCoroutine(CoReturnToPool(1.0f, obj));
 
                 break;
             }
         }
+    }
+
+    IEnumerator CoReturnToPool(float time, GameObject obj)
+    {
+        yield return new WaitForSeconds(time);
+
+        ObjectPool.Instance.PushToPool("Effect", obj, null);
+        Debug.Log("return to pool");
     }
 }

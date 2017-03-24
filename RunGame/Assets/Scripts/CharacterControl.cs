@@ -50,8 +50,8 @@ public class CharacterControl : MonoBehaviour
             return;
         }
 
-        Move();
-        Rotate();
+        //Move();
+        //Rotate();
         Attack();
         Jump();
         Slide();
