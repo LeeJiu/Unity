@@ -2,14 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
+    public GameObject gPlayer;
     public float fTileInterval = 3.5f;  //타일 간격
 
     private GameObject gLastTile;       //마지막에 활성화된 타일을 저장
     private Vector3 vStartPos;
     private int nNumberOfTile;
     private int nObjCount = 0;
+    private float fTick = 0.0f;
+
+    public bool bStart = false;
 
     void Awake()
     {
@@ -25,11 +29,20 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if(ObjectPool.Instance.GetPooledObject("Tile").GetPoolSize() > 5)
+        if (ObjectPool.Instance.GetPooledObject("Tile").GetPoolSize() > 3)
         {
             vStartPos = gLastTile.transform.position;
             vStartPos.z += fTileInterval;
             TileActive();
+        }
+
+        if (bStart == false) return;
+
+        fTick += Time.deltaTime;
+        if(fTick >= 0.5f)
+        {
+            fTick = 0.0f;
+            gPlayer.GetComponent<PlayerInfo>().AddScore(25);
         }
     }
 
@@ -47,14 +60,14 @@ public class GameManager : MonoBehaviour
         //활성화된 타일을 저장한다.
         gLastTile = gNewTile;
 
-        //타일이 활성화될 때 오브젝트도 세팅된다.
-        SetObject();
-        nObjCount++;
+       //타일이 활성화될 때 오브젝트도 세팅된다.
+       SetObject();
+       nObjCount++;
     }
 
     void SetObject()
     {
-        if (nObjCount == 0) return;
+        if (nObjCount < 8) return;
 
         if(nObjCount % 3 == 0)
         {

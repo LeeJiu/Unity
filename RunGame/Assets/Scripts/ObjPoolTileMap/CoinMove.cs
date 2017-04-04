@@ -20,7 +20,6 @@ public class CoinMove : MonoBehaviour
 
     private void OnDisable()
     {
-        Debug.Log("disable");
         bMove = false;
         bErase = false;
     }
@@ -30,7 +29,7 @@ public class CoinMove : MonoBehaviour
         if (other.tag == "Player")
         {
             bErase = true;
-            other.gameObject.GetComponent<CharacterInfo>().AddCoin();
+            other.gameObject.GetComponent<PlayerInfo>().AddCoin();
             StartCoroutine("CoReturnToPool");
         }
     }

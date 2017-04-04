@@ -22,7 +22,7 @@ public class HurdleMove : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<CharacterInfo>().Damaged(nDamage);
+            collision.gameObject.GetComponent<PlayerInfo>().Damaged(nDamage);
             ObjectPool.Instance.PushToPool(fHurdleName, this.gameObject, null);
         }
     }

@@ -16,7 +16,7 @@ public class Coin : MonoBehaviour
         if(other.tag == "Player")
         {
             bErase = true;
-            other.gameObject.GetComponent<CharacterInfo>().AddCoin();
+            other.gameObject.GetComponent<PlayerInfo>().AddCoin();
             Destroy(this.gameObject, 0.8f);
         }
     }

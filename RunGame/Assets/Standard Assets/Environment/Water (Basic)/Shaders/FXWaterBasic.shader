@@ -47,7 +47,6 @@ v2f vert(appdata v)
 
 	// object space view direction
 	o.viewDir.xzy = normalize( WorldSpaceViewDir(v.vertex) );
-
 	UNITY_TRANSFER_FOG(o,o.pos);
 	return o;
 }

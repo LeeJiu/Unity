@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f350b219bde44ef4bb08f69f1d09c713
+timeCreated: 1490687894
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Curlz MT
+  fontNames:
+  - Curlz MT
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
